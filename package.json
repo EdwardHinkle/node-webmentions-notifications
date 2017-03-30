@@ -1,0 +1,30 @@
+{
+  "name": "check-mentions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "start": "tsc; node ./build/index.js"
+  },
+  "keywords": [
+    "indieweb"
+  ],
+  "author": "Eddie Hinkle (http://eddiehinkle.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cron": "^1.2.0",
+    "@types/es6-promise": "0.0.32",
+    "@types/lodash": "^4.14.59",
+    "@types/moment": "^2.13.0",
+    "@types/node-notifier": "0.0.28",
+    "@types/open": "0.0.29",
+    "@types/request": "0.0.42",
+    "cron": "^1.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "node-notifier": "^5.1.2",
+    "open": "0.0.5",
+    "request": "^2.81.0"
+  }
+}
