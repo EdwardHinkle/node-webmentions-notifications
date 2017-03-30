@@ -1,5 +1,7 @@
 {
+    "domain": "<domain-name>",
+    "cronRepeat": "0 0,30 * * * *",
     "webmention": {
-        "token": "<enterWebmentionIOToken>"
+        "token": "<webmention-io-token>"
     }
 }
