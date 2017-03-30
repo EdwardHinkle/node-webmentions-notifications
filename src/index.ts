@@ -10,7 +10,7 @@ var notifier = new NotificationCenter();
 var itemsToNotify = [];
 var lastDateChecked = moment().subtract(2, "hours");
 
-new cron.CronJob('0 0,30 * * * *', function() {
+new cron.CronJob(config.cronRepeat, function() {
 	getWebMentions();
 }, null, true, 'America/New_York');
 
@@ -40,7 +40,7 @@ function getWebMentions() {
             var mentionToSend = itemsToNotify.shift();
 
             notifier.notify({
-                title: "EddieHinkle.com received a " + mentionToSend.activity.type,
+                title: config.domain + " received a " + mentionToSend.activity.type,
                 icon: mentionToSend.data.author.photo,
                 message: mentionToSend.activity.sentence,
                 open: mentionToSend.source,
