@@ -41,7 +41,6 @@ function getWebMentions() {
 
             notifier.notify({
                 title: "EddieHinkle.com received a " + mentionToSend.activity.type,
-                appIcon: "http://eddiehinkle.com/images/profile.jpg",
                 icon: mentionToSend.data.author.photo,
                 message: mentionToSend.activity.sentence,
                 open: mentionToSend.source,
